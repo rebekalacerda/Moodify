@@ -27,7 +27,7 @@ O uso de Pull Requests permitiu revisar e integrar as alterações de forma cont
 <img width="1280" height="720" alt="Captura de Tela 2026-05-03 às 11 18 58" src="https://github.com/user-attachments/assets/d42ac6d3-bdc1-42be-99f8-483c5984d576" />
 <img width="1772" height="1094" alt="image" src="https://github.com/user-attachments/assets/2d522816-f4ee-4001-b33e-1432b5bde1a6" />
 
---
+---
 
 
 
