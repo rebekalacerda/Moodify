@@ -1,8 +1,8 @@
 # Moodify
 
 ## 👥 Integrantes
-- Rebeka Lacerda Paes
 - Julia Lumi Suzuki
+- Rebeka Lacerda Paes
 
 ## 📌 Descrição
 Projeto desenvolvido para demonstrar o uso do fluxo de versionamento com Git e GitHub.
