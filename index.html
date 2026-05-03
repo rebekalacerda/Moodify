@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="laptop">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <div class="logo">
+                <span class="vinyl-icon">💿</span>
+                <span class="moodify-text">Moodify</span>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <!-- Tela 1 -->
+            <div id="screen-landing" class="screen active">
+                <div class="landing">
+                    <!-- Lado esquerdo -->
+                    <div class="landing-left">
+                        <h1>Descubra a música<br>perfeita para você!</h1>
+                        <button onclick="startApp()" class="btn-comecar">Começar</button>
+                    </div>
+                    <!-- Lado direito -->
+                        <img src="imagem1.PNG" width="500">
+                </div>
+            </div>
+
+            <!-- Tela 3 -->
+            <div id="screen-genre" class="screen hidden">
+                <h2 class="title">Escolha o <span class="red">Gênero:</span></h2>
+                
+                <div id="categories" class="categories-grid"></div>
+
+                <div id="subgenres-container" class="subgenres hidden">
+                    <h3 id="category-title" class="subtitle"></h3>
+                    <div id="subgenres-list" class="subgenres-list"></div>
+                </div>
+
+                <div class="emotions">
+                    <h3>Como você está se sentindo?</h3>
+                    <div class="emotions-grid">
+                        <label><input type="checkbox" name="emotion" value="Feliz"> Feliz</label>
+                        <label><input type="checkbox" name="emotion" value="Triste"> Triste</label>
+                        <label><input type="checkbox" name="emotion" value="Romântico"> Romântico</label>
+                        <label><input type="checkbox" name="emotion" value="Nostálgico"> Nostálgico</label>
+                        <label><input type="checkbox" name="emotion" value="Motivado"> Motivado</label>
+                    </div>
+                </div>
+
+                <button onclick="discoverMusic()" class="btn-descobrir">Descobrir música</button>
+            </div>
+
+            <!-- Tela 3 - Resultado -->
+            <div id="screen-result" class="screen hidden">
+                <div class="result">
+                    <div id="album-art" class="album-art"></div>
+                    
+                    <div class="result-info">
+                        <h2 id="song-name"></h2>
+                        <p id="artist-name"></p>
+                        
+                        <div class="tags">
+                            <span id="genre-tag" class="tag"></span>
+                            <span id="emotion-tag" class="tag"></span>
+                        </div>
+                        
+                        <button onclick="openSpotify()" class="btn-spotify">
+                            <span class="spotify-icon">
+                                <img src="Spotify_Primary_Logo_RGB_White.png" width="30">
+                            </span>
+                            Ouça no Spotify
+                        </button>
+                        
+                        <div class="actions">
+                            <button onclick="resetApp()" class="btn-secondary">Nova busca</button>
+                            <button onclick="backToGenreScreen()" class="btn-secondary">Escolher outro gênero</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
